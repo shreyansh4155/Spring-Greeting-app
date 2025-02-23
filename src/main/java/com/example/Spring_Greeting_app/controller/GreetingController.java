@@ -1,6 +1,9 @@
 package com.example.Spring_Greeting_app.controller;
 
+import com.example.GreetingApplication.model.Greeting;
 import com.example.GreetingApplication.service.GreetingService;
+import org.springframework.web.bind.annotation.*;
+import java.util.Optional;rvice;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
