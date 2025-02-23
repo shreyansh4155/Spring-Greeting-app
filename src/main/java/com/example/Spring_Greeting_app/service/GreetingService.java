@@ -1,6 +1,10 @@
 package com.example.Spring_Greeting_app.service;
 
 import org.springframework.stereotype.Service;
+import java.util.Optional;
+import com.example.GreetingApplication.model.Greeting;
+import com.example.GreetingApplication.repository.GreetingRepository;
+
 
 @Service
 public class GreetingService {
@@ -15,6 +19,13 @@ public class GreetingService {
         } else {
             return "Hello World!";
         }
+        Greeting greeting = new Greeting(message);
+        greetingRepository.save(greeting);
+        return message;
+    }
 
+    public Optional<Greeting> getGreetingById(Long id) {
+        return greetingRepository.findById(id);
+    }
     }
 }
