@@ -1,13 +1,13 @@
-package com.example.Spring_Greeting_app;
+package com.example.GreetingApplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringGreetingAppApplication {
+public class GreetingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringGreetingAppApplication.class, args);
+		SpringApplication.run(GreetingApplication.class, args);
 	}
 
 }

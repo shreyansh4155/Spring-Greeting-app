@@ -1,4 +1,4 @@
-package com.example.Spring_Greeting_app.model;
+package com.example.GreetingApplication.model;
 
 import jakarta.persistence.*;
 
@@ -28,3 +28,4 @@ public class Greeting {
         this.message = message;
     }
 }
+
